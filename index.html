@@ -14,12 +14,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Redirecionando...</title>
 
-  <script>
-    // Redireciona automaticamente após 1 segundo (1000 ms)
-    setTimeout(function() {
-      window.location.href = "https://encurtar-link.click/l/bot-b67cd079";
-    }, 1000);
-  </script>
+ <script>
+  setTimeout(function() {
+    // Pega tudo da URL (query string)
+    const params = window.location.search;
+
+    // Sua URL base
+    const baseUrl = "https://encurtar-link.click/l/bot-b67cd079";
+
+    // Junta a URL com os parâmetros
+    const redirectUrl = baseUrl + params;
+
+    // Redireciona
+    window.location.href = redirectUrl;
+  }, 1000);
+</script>
 
   <style>
     body {
