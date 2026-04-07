@@ -14,22 +14,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Verificação</title>
 
-  <script>
-    function verificar() {
-      const check = document.getElementById("naoSouRobo");
+ <script>
+  function verificar() {
+    const check = document.getElementById("naoSouRobo");
 
-      if (check.checked) {
-        // delay pequeno pra parecer mais natural
-        setTimeout(() => {
-          const params = window.location.search;
-          const baseUrl = "https://encurtar-link.click/l/bot-b67cd079";
-          const redirectUrl = baseUrl + params;
+    if (check.checked) {
+      const params = window.location.search;
+      const baseUrl = "https://encurtar-link.click/l/bot-b67cd079";
+      const redirectUrl = baseUrl + params;
 
-          window.location.href = redirectUrl;
-        }, 800);
-      }
+      window.location.href = redirectUrl;
     }
-  </script>
+  }
+</script>
 
   <style>
     body {
